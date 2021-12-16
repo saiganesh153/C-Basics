@@ -2,9 +2,9 @@
 void main()
 {
   int a,b,main_choice,sub_choice;
-  printf("enter two numbers:");
-  scanf(" %d%d ",&a,&b);
-  
+  printf("enter two numbers:\n");
+  scanf("%d%d",&a,&b);
+
   printf("choose the folloing opetion \n1)arithmetic \n2)relational \n3)bitwise\n");
   scanf("%d",&main_choice);
   switch(main_choice)
@@ -12,7 +12,7 @@ void main()
      case 1:
       	printf("choose one of the folloing opetion \n1)+ \n2)- \n3)* \n4)/ \n5)%%\n");
       	scanf("%d",&sub_choice);
-      	break;
+    //   	break;
       	switch(sub_choice)
       	{
 		  
@@ -34,10 +34,11 @@ void main()
 		        default:
 		        printf("invalid");
         }
+        break;
      case 2:
-	    printf("choose one of the folloing opetion \n1)< \n2)<= \n3)> \n4)>= \n5)== \n6)/=");
+	    printf("choose one of the folloing opetion \n1)< \n2)<= \n3)> \n4)>= \n5)== \n6)/=\n");
       	scanf("%d",&sub_choice);
-      	break;
+    //   	break;
       	switch(sub_choice)
       	{
 		  
@@ -62,10 +63,11 @@ void main()
 		     default:
       	     printf("invalid");  
         }
+        break;
      case 3:
-	    printf("choose one of the folloing opetion \n1)& \n2)/ \n3)^ ");
+	    printf("choose one of the folloing opetion \n1)& \n2)/ \n3)^ \n");
       	scanf("%d",&sub_choice);
-      	break;
+    //   	break;
       	switch(sub_choice)
       	{
 		  
@@ -81,7 +83,7 @@ void main()
 		      default:
 		      printf("invalid");
       	}
+      	break;
     }
   
 }
-
